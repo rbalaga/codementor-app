@@ -1,15 +1,15 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { Container, Jumbotron } from "reactstrap";
-import Home from "./src/components/Home/Home";
-import LoginForm from "./src/components/login";
-import AppLogout from "./src/components/Logout";
-import RegisterForm from "./src/components/register";
-import Students from "./src/components/students/Students";
-import AppNavbar from "./src/Header/NavBar";
-import ProtectedRoute from "./src/Helpers/ProtectedRoute";
-import Movies from "./src/Apollo/Apollo";
-import Codementor from "./src/Codementor";
+import Home from "./components/Home/Home";
+import LoginForm from "./components/login";
+import AppLogout from "./components/Logout";
+import RegisterForm from "./components/register";
+import Students from "./components/students/Students";
+import AppNavbar from "./Header/NavBar";
+import ProtectedRoute from "./Helpers/ProtectedRoute";
+import Movies from "./Apollo/Apollo";
+import Codementor from "./Codementor";
 
 const AppRouter = () => {
   return (
