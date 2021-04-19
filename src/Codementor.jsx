@@ -12,7 +12,7 @@ const Codementor = () => {
       .get("https://authenticate-node.herokuapp.com/sessions")
       .then((response) => {
         const start = moment() - moment().startOf("week");
-        const total = response.data.data.reduce((i, session) => {
+        const total = response.data.reduce((i, session) => {
           const end = moment() - moment(session.finished_at);
           if (start < end) {
             i += session.amount_before_platform_fee;
@@ -21,7 +21,10 @@ const Codementor = () => {
         }, 0);
 
         setCost(total);
-        setSessionlist(response.data.data);
+        const orderedSessions = response.data.sort(
+          (a, b) => a.finished_at > b.finished_at
+        );
+        setSessionlist(orderedSessions);
       });
   };
   useEffect(() => {
