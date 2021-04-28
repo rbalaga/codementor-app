@@ -22,6 +22,18 @@ const Codementor = () => {
         }, 0);
 
         setCost(total);
+
+        let calculatedCutting = 22;
+        if (total >= 1500) {
+          calculatedCutting = 13;
+        } else if (total >= 750) {
+          calculatedCutting = 15;
+        } else if (total >= 300) {
+          calculatedCutting = 18;
+        } else if (total >= 50) {
+          calculatedCutting = 19;
+        }
+        setCuttings(calculatedCutting);
         const orderedSessions = response.data.sort(
           (a, b) => a.finished_at > b.finished_at
         );
@@ -34,12 +46,13 @@ const Codementor = () => {
 
   const rate = (100 - cuttings) / 100;
   return (
-    <>
+    <div className="my-3">
       <h2 className="mt-3">Total Sessions: {sessionList.length}</h2>
       <hr />
       <h2>Total Cost: {totalCost.toFixed(1)}</h2>
       <hr />
       <h2>After Cuttings: {(totalCost * rate).toFixed(1)}</h2>
+      <h2>After Cuttings (INR): {(totalCost * rate * 73).toFixed(1)}</h2>
       <hr />
       <input
         type="number"
@@ -58,7 +71,7 @@ const Codementor = () => {
           );
         })}
       </ul>
-    </>
+    </div>
   );
 };
 
