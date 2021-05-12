@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/codementor-app/static/css/main.f29ae65a.chunk.css",
+    "main.js": "/codementor-app/static/js/main.a68377d9.chunk.js",
+    "main.js.map": "/codementor-app/static/js/main.a68377d9.chunk.js.map",
+    "runtime-main.js": "/codementor-app/static/js/runtime-main.df98634c.js",
+    "runtime-main.js.map": "/codementor-app/static/js/runtime-main.df98634c.js.map",
+    "static/css/2.77cf4ef6.chunk.css": "/codementor-app/static/css/2.77cf4ef6.chunk.css",
+    "static/js/2.25c39d6d.chunk.js": "/codementor-app/static/js/2.25c39d6d.chunk.js",
+    "static/js/2.25c39d6d.chunk.js.map": "/codementor-app/static/js/2.25c39d6d.chunk.js.map",
+    "index.html": "/codementor-app/index.html",
+    "static/css/2.77cf4ef6.chunk.css.map": "/codementor-app/static/css/2.77cf4ef6.chunk.css.map",
+    "static/css/main.f29ae65a.chunk.css.map": "/codementor-app/static/css/main.f29ae65a.chunk.css.map",
+    "static/js/2.25c39d6d.chunk.js.LICENSE.txt": "/codementor-app/static/js/2.25c39d6d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.df98634c.js",
+    "static/css/2.77cf4ef6.chunk.css",
+    "static/js/2.25c39d6d.chunk.js",
+    "static/css/main.f29ae65a.chunk.css",
+    "static/js/main.a68377d9.chunk.js"
+  ]
+}
